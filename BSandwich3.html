@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthyish Breakfast Sandwiches</title>
+    <link rel="icon" href="Img/Logo1.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/Home1.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/Main1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+    <link rel="stylesheet" href="css/contactus.css">
+    <link rel="stylesheet" href="css/Signup.css">
+
+    <style>
+      .about-section {
+        padding: 50px;
+        text-align: center;
+        background-color: #474e5d;
+        color: white;
+      }
+
+      p {
+        text-align: center;
+        font-size: 25px;
+        margin: 40px;
+        border-color: rgb(97, 69, 69);
+        font-weight: 500;
+    }
+    
+    #myBtn {
+      display: none; /* Hidden by default */
+      position: fixed; /* Fixed/sticky position */
+      bottom: 20px; /* Place the button at the bottom of the page */
+      right: 30px; /* Place the button 30px from the right */
+      z-index: 99; /* Make sure it does not overlap */
+      border: none; /* Remove borders */
+      outline: none; /* Remove outline */
+      background-color: rgb(94, 0, 0); /* Set a background color */
+      color: white; /* Text color */
+      cursor: pointer; /* Add a mouse pointer on hover */
+      padding: 15px; /* Some padding */
+      border-radius: 100px; /* Rounded corners */
+      font-size: 18px; /* Increase font size */
+      width: 60px;
+    }
+    
+    #myBtn:hover {
+      background-color: rgb(0, 0, 0); /* Add a dark-grey background on hover */
+    }
+    </style>
+</head>
+<body>
+        <!-- Navbar -->
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+              <div class="container-fluid">
+                <i><strong><a id="rcorners" class="navbar-brand" href="Home.html" style="font-size:20px; border: 2px solid; padding: 5px; margin-left: 50%;">Budget Meal</a></strong></i>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown" style="margin-left: 20%;">
+                  <ul class="navbar-nav">
+                    <li class="nav-item" style="margin-right: 20px;">
+                      <a class="nav-link" aria-current="page" href="Main.html"><i class="fas fa-home"></i> Home</a>
+                    </li>
+                    <li class="nav-item" style="margin-right: 20px;">
+                      <a class="nav-link" href="Contact.html"><i class="fas fa-address-book"></i> Contact Us</a>
+                    </li>
+                    <li class="nav-item" style="margin-right: 20px;">
+                      <a class="nav-link" href="About Us.html"><i class="fas fa-handshake"></i> About Us</a>
+                    </li>
+                    <li class="nav-item" style="margin-right: 20px;">
+                      <a class="nav-link" href="Shop.html"><i class="fas fa-store-alt"></i> Shop</a>
+                    </li>
+                    <li class="nav-item" style="margin-right: 20px;">
+                      <a class="nav-link" href="Meal.html"><i class="fas fa-drumstick-bite"></i> Meals</a>
+                    </li>
+                    </ul>
+                </div>
+                <div style="margin-right: 10%;">
+                  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign Up</button>
+                  <button onclick="document.getElementById('id02').style.display='block'" style="width:auto; margin-left: 5px;">Log In</button>
+                    </div>
+              
+                <div id="id01" class="modal">
+                  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                  <form class="modal-content" action="/action_page.php">
+                    <div class="container">
+                      <h2 style="text-align: center; font-weight: bold;">Sign Up</h2>
+                      <p>Please fill in this form to create an account.</p>
+                      <hr>
+                      <label for="email"><b>Email</b></label>
+                      <input type="text" placeholder="Enter Email" name="email" required>
+
+                      <label for="psw"><b>Password</b></label>
+                      <input type="password" placeholder="Enter Password" name="psw" required>
+
+                      <label for="psw-repeat"><b>Repeat Password</b></label>
+                      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                      
+                      <label>
+                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                      </label>
+
+                      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+                      <div class="clearfix">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                        <button type="submit" class="signupbtn">Sign Up</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+
+                <div id="id02" class="modal">
+                  <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+                  <form class="modal-content" action="/action_page.php">
+                    <div class="container">
+                      <h2 style="text-align: center; font-weight: bold;">Log In</h2>
+                      <p>Please fill in this form to log into your account.</p>
+                      <hr>
+                      <label for="email"><b>Email</b></label>
+                      <input type="text" placeholder="Enter Email" name="email" required>
+
+                      <label for="psw"><b>Password</b></label>
+                      <input type="password" placeholder="Enter Password" name="psw" required>
+                      
+                      <label>
+                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                      </label>
+
+                      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+                      <div class="clearfix">
+                        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+                        <button type="submit" class="signupbtn">Log In</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+          </nav>
+      </div>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <div>
+    <div class="row">
+      <div class="column">
+        <img src="Breakfast Sandw/3.jpg" style="width:100%; height: 670px;" class="rounded mx-auto d-block" alt="">
+      </div>
+      <div class="column">
+        <p style="text-align: center; font-size: 40px; margin-top: 24%;"><strong>Healthyish Breakfast Sandwiches</strong></p>
+        <hr>
+        <p style="font-size: 17px;">BY CHRIS MOROCCO<br>
+          PHOTOGRAPHY BY CHRISTOPHER TESTANI</p>
+          <div style="text-align: center;"><hr>
+            <p>4.8
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked" style="cursor: pointer;"></span>
+          (<span id="inc" value="i">74</span>)
+        </p>
+            </div>
+          </div>                
+        </div>
+      </div>
+  <hr>
+  <div>
+    <div class="row">
+      <div class="column">
+        <div>
+          <h2 style="font-size: 30px; margin-left: 5px; text-align: center;"><strong>- INGRIDIANTS :</strong></h2><hr>
+            <div>
+              <h4 style="background-color: yellow; text-align: center; margin-left: 15%; margin-right: 15%;"><i><strong>Makes 2 Servings</strong></i></h4>
+              <p style="font-size: 20px;">
+              1 medium red onion, trimmed, cut in half through equator, peeled, separated into rings<br><br>
+              1 tsp. soy sauce<br><br>
+              ½ tsp. garlic powder<br><br>
+              2 Tbsp. extra-virgin olive oil, divided<br><br>
+              Kosher salt<br><br>
+              ¼ cup finely chopped soft herbs, such as basil, cilantro, and/or dill<br><br>
+              2 Tbsp. green or red hot sauce<br><br>
+              1 Tbsp. unsalted butter<br><br>
+              4 large eggs, lightly beaten<br><br>
+              2 whole-grain English muffins, toasted<br><br>
+              2 oz. sliced sharp cheddar cheese
+            </p>
+          </div>
+        </div>     
+      </div>
+      <div class="column">
+        <div>
+          <h2 style="font-size: 30px; margin-left: 5px; text-align: center;"><strong>- PREPERATIONS :</strong></h2><hr>
+          <div>
+            <h4 style="background-color: yellow; text-align: center; margin-left: 15%; margin-right: 15%;"><i><strong>Makes 2 Servings</strong></i></h4>
+            <p style="font-size: 20px;">
+              <strong>Step 1 :</strong> Preheat oven to 350°. Toss onion, soy sauce, garlic powder, and 1 Tbsp. oil on a large rimmed baking sheet to coat. Season with salt. Bake, tossing once halfway through, until onion is browned around the edges and very tender, 25–35 minutes. Let cool 5 minutes. <br><br>
+              <strong>Step 2 :</strong> Meanwhile, toss herbs, hot sauce, and remaining 1 Tbsp. oil in a small bowl. Season with salt, if needed. <br><br>
+              <strong>Step 3 :</strong> Melt butter in a small nonstick skillet over medium heat. Add eggs; season with salt. Cook, stirring with a rubber spatula, until eggs have set into creamy folds, 1–2 minutes. <br><br>
+              <strong>Step 4 :</strong> Spread herb sauce on cut sides of muffins. Transfer bottom halves to a rimmed baking sheet. Top with eggs, then lay cheese over. Bake bottom halves just until cheese is melted, about 5 minutes. Top with onion and close with muffin tops. <br><br>
+              <strong>Step 5 :</strong> Do Ahead: Onion can be cooked 5 days ahead. Transfer to an airtight container and chill. To make a sandwich quickly without turning your oven on, fold the cheese into the eggs when they have just begun to set, top with onion (no need to rewarm), and assemble with toasted English muffins.</p>
+          </div>
+        </div>
+       </div>
+      </div>
+  </div>
+
+  <div>
+    <!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-center w3-black w3-xlarge">
+<div>
+          <div>
+            <div class="row">
+              <div class="col">
+                <div>
+                    <p>How would you rate Healthyish Breakfast Sandwiches?
+                    <div class="rate tout" style="margin-left: 45%; margin-bottom: 10px;">
+                      <input type="radio" id="star5" name="rate" value="5" onclick="Numero();">
+                      <label for="star5" title="text">5 stars</label>
+                      <input type="radio" id="star4" name="rate" value="4" onclick="Numero();">
+                      <label for="star4" title="text">4 stars</label>
+                      <input type="radio" id="star3" name="rate" value="3" onclick="Numero();">
+                      <label for="star3" title="text">3 stars</label>
+                      <input type="radio" id="star2" name="rate" value="2" onclick="Numero();">
+                      <label for="star2" title="text">2 stars</label>
+                      <input type="radio" id="star1" name="rate" value="1" onclick="Numero();">
+                      <label for="star1" title="text">1 star</label>
+                    </div></p>
+                  </div>
+              </div>
+            </div>
+          </div>
+    </div>  
+</footer>
+</div>
+
+<script type = "text/javascript">
+  var i = 74;
+ function Numero() {
+  document.getElementById('inc').innerText = ++i;
+  }
+</script>
+  <script src="js/Signup.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+</body>
+</html>
